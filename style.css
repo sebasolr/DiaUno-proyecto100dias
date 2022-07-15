@@ -1,0 +1,22 @@
+body {
+  background-color: #fcc;
+}
+
+.box {
+  border: 1px solid black;
+  width: 200px;
+  background-color: red;
+}
+.box .test {
+  color: blueviolet;
+  font-size: 30px;
+}
+.box .subs {
+  color: aqua;
+}
+
+.box {
+  width: 530px;
+}
+
+/*# sourceMappingURL=style.css.map */

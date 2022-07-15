@@ -1,0 +1,32 @@
+// puedo agregar variables en sass $ nombre de la variable : el resultado
+$color-principal: #fcc;
+
+// puedo trabajar con modulos
+//@use 'anidacion el nombre del archivo debe ser _anidacion
+
+body{
+    background-color: $color-principal;
+}
+
+//mixin (tiene que estar arriba para que funcione, recuerda es por cascada.
+@mixin valores-default ($fondo: red) {
+    border: 1px solid black;
+    width: 200px;
+    background-color: $fondo;
+    
+}
+// anidacion 
+.box{
+    .test{  
+        color:blueviolet;
+        font-size: 30px;
+    }
+    .subs{
+        color: aqua;
+    }
+    @include valores-default();
+}
+//operadores
+.box{
+    width: 400px + 130px;
+}
